@@ -50,7 +50,7 @@ class MyHome extends StatelessWidget{
     final listView = ListView(
       children: <Widget>[
         descriptionPlace,
-       
+
         reviewList,
       ],
     );

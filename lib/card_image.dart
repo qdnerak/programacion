@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:hikeplaces/fab_green.dart';
 
 class CardImage extends StatelessWidget{
   String path;
@@ -40,6 +41,16 @@ class CardImage extends StatelessWidget{
         ),
       ),
     );
-    return cardImage;
+    //satack
+    final stackCardImage = Stack(
+      alignment: Alignment(0.7 , 0.95),
+      children: <Widget>[
+        cardImage,
+        FabGreen(),
+
+      ],
+    );
+
+    return stackCardImage;
   }
 }
